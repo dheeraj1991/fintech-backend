@@ -7,26 +7,30 @@ The project is intended to make use of two apis to insert data to SQLite databas
 
 ## APIs ##
 ### Create User ###
-API end point  : {base_url}/api/v1/create_customer/
-Request Method : POST
-Content-Type : application/json
-Example Request Body :
-`{
+API end point  : {base_url}/api/v1/create_customer/  
+Request Method : POST  
+Content-Type : application/json  
+Example Request Body :  
+```javascript
+{
     "first_name": "John",
     "last_name": "Vang",
     "dob": "10-10-2005"
-}`
+}
+```
 
 ### Create Policy ###
-API end point  : {base_url}/api/v1/create_policy/
-Request Method : POST
-Content-Type : application/json
-Example Request Body :
-`{
+API end point  : {base_url}/api/v1/create_policy/  
+Request Method : POST  
+Content-Type : application/json  
+Example Request Body :  
+```javascript
+{
     "type": "accident-claim",
     "premium": 1000,
     "cover": 1000000
-}`
+}
+```
 
 
 Steps to setup the project : 
