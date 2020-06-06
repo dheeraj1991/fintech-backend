@@ -9,3 +9,6 @@ class Customer(models.Model):
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
     dob = models.DateField()
+
+    def __str__(self):
+        return '{} {}'.format(self.first_name, self.last_name)

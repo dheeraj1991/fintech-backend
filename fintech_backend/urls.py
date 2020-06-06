@@ -16,11 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from customer.views import CustomerView
+from policy.views import PolicyView
 from .constants import VERSION
 
 base_url = "api/{}/".format(VERSION)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path(base_url + 'create_customer/', CustomerView.as_view())
+    path(base_url + 'create_customer/', CustomerView.as_view()),
+    path(base_url + 'create_policy/', PolicyView.as_view())
 ]

@@ -13,7 +13,7 @@ class CustomerView(CustomClassView):
 
     def post(self, request, *args, **kwargs):
         Customer.objects.create(**self.request_data)
-        return JsonResponse({"mssage": "User successfully created"})
+        return JsonResponse({"message": "User successfully created"})
 
     def validate(self):
         """
