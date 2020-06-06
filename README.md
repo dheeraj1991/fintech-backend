@@ -1,7 +1,6 @@
 Fintech Backend
 ===================
 
-- - - - 
 # Project Details #
 The project is intended to make use of two apis to insert data to SQLite database. This is developed in Django 3.0 based project, which needs python3.6>= to run.
 
